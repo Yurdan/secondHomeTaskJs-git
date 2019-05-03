@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS home task 2</title>
+
+</head>
+
+<body>
+    <script>
+        function showPrimeNumbers(minValue, maxValue) {
+            PrimeNumbers: for (; minValue <= maxValue; minValue++) {
+
+                for (var firstCheckingNumber = 2; firstCheckingNumber < minValue; firstCheckingNumber++) {
+                    if (minValue % firstCheckingNumber == 0) continue PrimeNumbers;
+                }
+                alert(minValue);
+            }
+
+        }
+        showPrimeNumbers(2, 20);
+    </script>
+
+
+</body>
+
+</html>
